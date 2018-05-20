@@ -1,0 +1,22 @@
+{
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/YMFE/yapi-plugin-qsso/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "第三方插件，在生成的配置文件中，添加如下配置即可：",
+  "homepage": "https://github.com/YMFE/yapi-plugin-oauth#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "name": "yapi-plugin-oauth",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YMFE/yapi-plugin-oauth.git"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.1"
+}
