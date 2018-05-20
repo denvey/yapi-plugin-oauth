@@ -30,7 +30,7 @@
             "accessCode": {
                "key": "code"
             },
-            "AUTH_SERVER": "https://sso.xxxx.com/oauth2.0/authorize?"
+            "AUTH_SERVER": "https://sso.xxxx.com/oauth2.0/authorize"
          }
       }
   ]
