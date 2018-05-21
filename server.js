@@ -17,6 +17,10 @@ module.exports = function (options) {
             request(`${accessTokenAPI}&${appId.key}=${appId.value}&${secret.key}=${secret.value}&${accessCode.key}=${code}`, function (error, response, body) {
                 if (!error && response.statusCode == 200) {
                     let authInfo = JSON.parse(body);
+                    ctx.cookies.set('ssoid', authInfo[accessToken.key], {
+                        maxAge: 3600 * 24 * 7 * 1000, //authInfo.expires,
+                        httpOnly: true
+                    });
                     request(`${loginUrl}${authInfo[accessToken.key]}`, function (error, response, body) {
                         if (!error && response.statusCode == 200) {
                             let result = JSON.parse(body);
