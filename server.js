@@ -27,7 +27,7 @@ module.exports = function (options) {
                                         ret.email = item.email;
                                     }
                                     if (item.name) {
-                                        ret.name = item.name;
+                                        ret.username = item.name;
                                     }
                                 })
                                 resolve(ret);
